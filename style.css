@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+}
+
+/* header */
+
+header {
+     display: block;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-name {
+    margin-right: 20px;
+}
+
+.all-spaces {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 20px; 
+    text-align: center;
+}
+.space {
+
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+    height: 830px;
+    margin: 20px;
+    box-shadow: 30px 30px 40px rgba(182, 182, 182, 0.3);
+    background-color: rgb(36, 36, 36);
+    transition: transform 0.3s ease;
+}
+
+.space:hover {
+    transform: translateY(-10px);
+}
+.image-space {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.title {
+    font-weight: 400;
+    font:italic;
+    color: white;
+}
+.image {
+    width: 270px;
+    height: 600px;
+    padding: 10px;
+}
+
+.info {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px; 
+}
+
+.git-icon {
+    width: 20px;
+    height: auto;
+}
+
+h1, h3, p, a {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .space {
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .image {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .all-spaces {
+        gap: 10px; 
+    }
+
+    .space {
+        height: auto; 
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .image-space {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .title, h3, p, a {
+        font-size: 16px; 
+    }
+
+    .info {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .git-icon {
+        width: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title, h3, p, a {
+        font-size: 14px;
+    }
+}

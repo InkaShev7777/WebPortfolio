@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="header-div">
+                <h1 class="header-logo">Portfolio</h1>
+                <div class="header-info">
+                    <h3 class="profile-name">Ilya Shevchenko</h3>
+                    <img class="profile-image" src="resources/img/my-image.jpg" alt="profile-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="all-spaces">
+        <div class="space">
+            <h1 class="title">Cubes</h1>
+            <div class="image-space">
+                <img class="image" src="resources/img/Cubes-1.png" alt="someImage">
+                <img class="image" src="resources/img/Cubes-2.png" alt="someImage">
+            </div>
+            <div class="description">
+                <h3>Game for a large company</h3>
+                <p>The point of the game is to 
+                    collect the maximum number 
+                    of words and letters in 2 
+                    minutes
+                </p>
+            </div>
+            <div class="info">
+                <img class="git-icon" src="resources/img/git-icon.png" alt="">
+                <a target="_blank" href="https://github.com/InkaShev7777/TableGameCubes.git">GitHub</a>
+            </div>
+        </div>
+
+        <div class="space">
+            <h1 class="title">Instagram</h1>
+            <div class="image-space">
+                <img class="image" src="resources/img/Instagram-1.png" alt="someImage">
+                <img class="image" src="resources/img/Instagram-2.png" alt="someImage">
+            </div>
+            <div class="description">
+                <h3>Clone of Instagram</h3>
+                <p>Clone to Instagram app using Firebase</p>
+            </div>
+            <div class="info">
+                <img class="git-icon" src="resources/img/git-icon.png" alt="">
+                <a target="_blank" href="https://github.com/InkaShev7777/Instagram.git">GitHub</a>
+            </div>
+        </div>
+
+        <div class="space">
+            <h1 class="title">Airbnb</h1>
+            <div class="image-space">
+                <img class="image" src="resources/img/Airbnb-1.png" alt="someImage">
+                <img class="image" src="resources/img/Airbnb-2.png" alt="someImage">
+            </div>
+            <div class="description">
+                <h3>Clone of Airbnb</h3>
+                <p>A simple application that replicates 
+                    the interface of the Airbnb application
+                </p>
+            </div>
+            <div class="info">
+                <img class="git-icon" src="resources/img/git-icon.png" alt="">
+                <a target="_blank" href="https://github.com/InkaShev7777/Airbnb.git">GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBHovFN0_uzSQJQhsB_opfvnfpPgnrXqFM",
+      authDomain: "webresume-2221c.firebaseapp.com",
+      projectId: "webresume-2221c",
+      storageBucket: "webresume-2221c.appspot.com",
+      messagingSenderId: "517717251469",
+      appId: "1:517717251469:web:6b528b824d5bce12a559c4",
+      measurementId: "G-RT8N6WT98E"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
