@@ -53,7 +53,6 @@ header {
     border: 1px solid black;
     border-radius: 20px;
     padding: 30px;
-    height: 830px;
     margin: 20px;
     box-shadow: 30px 30px 40px rgba(182, 182, 182, 0.3);
     background-color: rgb(36, 36, 36);
@@ -66,14 +65,20 @@ header {
 }
 
 .image-space {
+    width: 530px;
     display: flex;
     align-items: center;
     padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: white rgb(36, 36, 36);
+
 }
 
 .image {
-    width: 270px;
-    height: 600px;
+    width: 230px;
+    height: auto;
     padding: 10px;
     transition: transform 0.3s ease;
 }
@@ -88,6 +93,12 @@ header {
     align-items: center;
     gap: 10px;
     margin-top: 20px; 
+}
+
+.description {
+    max-width: 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .git-icon {
@@ -126,6 +137,16 @@ footer {
     height: 70px;
 }
 
+.description-tetx {
+    max-width: 400px;
+}
+
+.sub-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     .space {
         height: auto;
@@ -155,13 +176,23 @@ footer {
     }
 
     .image {
-        width: 100%;
+        width: 60%;
         height: auto;
         padding: 5px;
     }
 
     .title, h3, p, a {
         font-size: 16px; 
+    }
+
+    .description-tetx {
+        max-width: 300px;
+    }
+    .sub-desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .git-icon {
